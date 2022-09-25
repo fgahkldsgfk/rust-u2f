@@ -205,14 +205,14 @@ dependencies = [
 
 [[package]]
 name = "bindgen"
-version = "0.59.2"
+version = "0.60.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2bd2a9a458e8f4304c52c43ebb0cfbd520289f8379a52e329a38afda99bf8eb8"
+checksum = "062dddbc1ba4aca46de6338e2bf87771414c335f7b2f2036e8f3e9befebf88e6"
 dependencies = [
  "bitflags",
  "cexpr",
  "clang-sys",
- "clap 2.34.0",
+ "clap",
  "env_logger",
  "lazy_static",
  "lazycell",
@@ -354,21 +354,6 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "2.34.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a0610544180c38b88101fecf2dd634b174a62eef6946f84dfc6a7127512b381c"
-dependencies = [
- "ansi_term",
- "atty",
- "bitflags",
- "strsim 0.8.0",
- "textwrap 0.11.0",
- "unicode-width",
- "vec_map",
-]
-
-[[package]]
-name = "clap"
 version = "3.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "71c47df61d9e16dc010b55dba1952a57d8c215dbb533fd13cdd13369aac73b1c"
@@ -377,9 +362,9 @@ dependencies = [
  "bitflags",
  "indexmap",
  "os_str_bytes",
- "strsim 0.10.0",
+ "strsim",
  "termcolor",
- "textwrap 0.15.0",
+ "textwrap",
 ]
 
 [[package]]
@@ -1246,15 +1231,15 @@ dependencies = [
 
 [[package]]
 name = "minicbor"
-version = "0.16.0"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08de72a57f15d959ab3a3b73fc94572eb954bfcfeb3809cf83cc1bd7d0aa774b"
+checksum = "2a20020e8e2d1881d8736f64011bb5ff99f1db9947ce3089706945c8915695cb"
 
 [[package]]
 name = "minicbor-derive"
-version = "0.10.0"
+version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "66dd6ff7dbe1a10938f8b72c6d0dd81c28fc68283aa79d7ba97c99a96a8e5823"
+checksum = "8608fb1c805b5b6b3d5ab7bd95c40c396df622b64d77b2d621a5eae1eed050ee"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2119,7 +2104,7 @@ version = "0.4.2"
 dependencies = [
  "bincode",
  "bytes",
- "clap 3.1.8",
+ "clap",
  "ctaphid",
  "futures 0.3.21",
  "hostname",
@@ -2137,7 +2122,7 @@ dependencies = [
  "tokio-util",
  "tower",
  "tracing",
- "tracing-journald 0.2.4",
+ "tracing-journald",
  "tracing-subscriber",
  "users",
 ]
@@ -2149,7 +2134,7 @@ dependencies = [
  "async-trait",
  "base64",
  "bincode",
- "clap 3.1.8",
+ "clap",
  "ctaphid",
  "directories",
  "dirs",
@@ -2172,7 +2157,7 @@ dependencies = [
  "tokio-serde",
  "tokio-util",
  "tracing",
- "tracing-journald 0.3.0",
+ "tracing-journald",
  "tracing-subscriber",
  "u2f-core",
 ]
@@ -2188,12 +2173,6 @@ name = "static_assertions"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
-
-[[package]]
-name = "strsim"
-version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ea5119cdb4c55b55d432abb513a0429384878c15dde60cc77b1c99de1a95a6a"
 
 [[package]]
 name = "strsim"
@@ -2285,15 +2264,6 @@ dependencies = [
  "env_logger",
  "getopts",
  "sha2 0.10.2",
-]
-
-[[package]]
-name = "textwrap"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d326610f408c7a4eb6f51c37c330e496b08506c9457c9d34287ecc38809fb060"
-dependencies = [
- "unicode-width",
 ]
 
 [[package]]
@@ -2518,17 +2488,6 @@ dependencies = [
 
 [[package]]
 name = "tracing-journald"
-version = "0.2.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ba49f4829f4e95702943ec6b2fad8936b369d20fa27036caf01329fb230e460"
-dependencies = [
- "libc",
- "tracing-core",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "tracing-journald"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba316a74e8fc3c3896a850dba2375928a9fa171b085ecddfc7c054d39970f3fd"
@@ -2664,12 +2623,6 @@ name = "vcpkg"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "accd4ea62f7bb7a82fe23066fb0957d48ef677f6eeb8215f372f52e48bb32426"
-
-[[package]]
-name = "vec_map"
-version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f1bddf1187be692e79c5ffeab891132dfb0f236ed36a43c7ed39f1165ee20191"
 
 [[package]]
 name = "version_check"
